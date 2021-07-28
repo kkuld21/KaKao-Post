@@ -37,7 +37,7 @@
       new daum.Postcode({
         oncomplete: function(data) {
           var jibunAddress = ""
-
+          console.log(data);
           if (data.jibunAddress == "") {
             jibunAddress = data.autoJibunAddress
           } else if (data.autoJibunAddress == "") {
